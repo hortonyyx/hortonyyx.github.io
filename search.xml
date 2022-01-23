@@ -12,477 +12,195 @@
       </tags>
   </entry>
   <entry>
-    <title>zhaoo主题配置文档</title>
-    <url>/2022/01/23/zhaoo%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3/</url>
-    <content><![CDATA[<h2 id="关于文档"><a href="#关于文档" class="headerlink" title="关于文档"></a>关于文档</h2><blockquote>
-<p>如有疑惑欢迎加鹅群咨询：<strong>550262893</strong><br>约定：无特殊说明时，文中“博客配置”指 <code>/_config.yml</code>，“主题配置”指 <code>/theme/hexo-theme-zhaoo/_config.yml</code>，缺省为“主题配置”。</p>
-</blockquote>
-<p>文档更新于：2021年4月4日</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h3><p>安装 <code>Hexo</code> 后进入根目录：</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><code class="hljs powershell"><span class="hljs-variable">$</span> <span class="hljs-built_in">cd</span> hexo<br></code></pre></td></tr></table></figure>
+    <title>国家与革命</title>
+    <url>/2022/01/23/%E5%9B%BD%E5%AE%B6%E4%B8%8E%E9%9D%A9%E5%91%BD/</url>
+    <content><![CDATA[<h1 id="阶级社会和国家"><a href="#阶级社会和国家" class="headerlink" title="阶级社会和国家"></a>阶级社会和国家</h1><h2 id="国家是阶级矛盾不可调和的产物"><a href="#国家是阶级矛盾不可调和的产物" class="headerlink" title="国家是阶级矛盾不可调和的产物"></a>国家是阶级矛盾不可调和的产物</h2><ol>
+<li>马克思的学说在如今的遭遇：“无害的神像”，“阉割革命的锋芒”，“庸俗化”</li>
+</ol>
+<aside>
+💡 **恢复马克思主义的国家学说**
 
-<p>安装 <code>zhaoo</code> 主题：</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">$ git clone https:<span class="hljs-regexp">//gi</span>thub.com<span class="hljs-regexp">/izhaoo/</span>hexo-theme-zhaoo.git themes/zhaoo<br></code></pre></td></tr></table></figure>
 
-<h3 id="开启主题"><a href="#开启主题" class="headerlink" title="开启主题"></a>开启主题</h3><p>修改 <code>Hexo</code> 根目录下的 <code>_config.yml</code> 文件启用 <code>zhaoo</code> 主题：</p>
-<figure class="highlight avrasm"><table><tr><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">theme:</span> zhaoo<br></code></pre></td></tr></table></figure>
+</aside>
 
-<p>启动 <code>Hexo</code> 服务器预览：</p>
-<figure class="highlight 1c"><table><tr><td class="code"><pre><code class="hljs 1c">$ hexo clean <span class="hljs-meta">&amp;&amp; hexo s</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="博客配置"><a href="#博客配置" class="headerlink" title="博客配置"></a>博客配置</h3><p>编辑 <code>Hexo</code> 根目录下的 <code>_config.yml</code> 文件，配置博客网站相关功能，对整个网站生效。</p>
-<p>建议将文章数量改为<strong>9</strong>篇：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">index_generator:</span><br>  <span class="hljs-attr">path:</span> <span class="hljs-string">&#x27;&#x27;</span><br>  <span class="hljs-attr">per_page:</span> <span class="hljs-number">9</span>  <span class="hljs-comment">#文章数量改为9篇（3的倍数更和谐）</span><br>  <span class="hljs-attr">order_by:</span> <span class="hljs-string">-date</span><br></code></pre></td></tr></table></figure>
-
-<p>启用代码高亮效果：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">highlight:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span>  <span class="hljs-comment">#启用代码高亮效果</span><br>  <span class="hljs-attr">line_number:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">auto_detect:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">hljs:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">tab_replace:</span><br></code></pre></td></tr></table></figure>
-
-<p>编辑 <code>zhaoo</code> 主题目录下的 <code>_config.yml</code> 文件，配置主题相关功能，只对主题生效。</p>
-<p>建议参考 <a href="https://github.com/izhaoo/hexo-theme-zhaoo/blob/master/_config.yml">_config.yml</a> 和本文进行配置，具体配置内容见下文。</p>
-<h3 id="主题更新"><a href="#主题更新" class="headerlink" title="主题更新"></a>主题更新</h3><p>进入到 <code>zhaoo</code> 主题目录：</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><code class="hljs powershell"><span class="hljs-variable">$</span> <span class="hljs-built_in">cd</span> themes/zhaoo<br></code></pre></td></tr></table></figure>
-
-<p>从 <code>GitHub</code> 获取更新：</p>
-<figure class="highlight elixir"><table><tr><td class="code"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>git pull<br></code></pre></td></tr></table></figure>
-
-<h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><h3 id="头部导航-NavBar"><a href="#头部导航-NavBar" class="headerlink" title="头部导航 (NavBar)"></a>头部导航 (NavBar)</h3><p>配置项 <code>navbar</code> 用于设置 <strong>头部导航条</strong>。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">navbar:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">back_home:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
-
-<p><code>enable</code> 用于控制头部导航条全局显示/隐藏。</p>
-<p><code>back_home</code> 用于开启返回首页按钮；其余的功能按钮随各自配置开启，例如“二维码”、“黑夜模式”、“搜索”等。</p>
-<h3 id="导航菜单-Menu"><a href="#导航菜单-Menu" class="headerlink" title="导航菜单 (Menu)"></a>导航菜单 (Menu)</h3><p>配置项 <code>menu</code> 用于设置 <strong>导航菜单</strong>。</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># Menu</span><br><span class="hljs-symbol">menu:</span><br><span class="hljs-symbol">  home:</span> / || 首页<br><span class="hljs-symbol">  galleries:</span> /galleries || 摄影<br><span class="hljs-symbol">  archives:</span> /archives || 归档<br><span class="hljs-symbol">  tags:</span> /tags || 标签<br><span class="hljs-symbol">  categories:</span> /categories || 分类<br><span class="hljs-symbol">  about:</span> /about || 关于<br></code></pre></td></tr></table></figure>
-
-<p>用 <strong>||</strong> 将内容分割为两部分，前面部分为页面 <code>URL</code>，后面部分为菜单中显示的名称。</p>
-<p>对于系统默认页面，如 <code>归档（/archives）</code>、<code>首页（/）</code> 等，直接添加菜单即可；对于独立页面，如 <code>标签（tags）</code>、<code>分类（categories）</code>，则需先创建页面后再添加菜单。</p>
-<h3 id="主题颜色"><a href="#主题颜色" class="headerlink" title="主题颜色"></a>主题颜色</h3><p>可以根据个人喜好，定制主题颜色。在配置项 <code>color</code> 中设置颜色。</p>
-<figure class="highlight processing"><table><tr><td class="code"><pre><code class="hljs processing"># Color<br><span class="hljs-built_in">color</span>:<br>  <span class="hljs-built_in">text</span>: <span class="hljs-string">&#x27;#33333D&#x27;</span><br>  <span class="hljs-built_in">text</span>-secondary: <span class="hljs-string">&#x27;#4e4e4e&#x27;</span><br>  <span class="hljs-built_in">text</span>-third: <span class="hljs-string">&#x27;#999999&#x27;</span><br>  <span class="hljs-built_in">background</span>: <span class="hljs-string">&#x27;#ffffff&#x27;</span><br>  <span class="hljs-built_in">background</span>-secondary: <span class="hljs-string">&#x27;#f6f8fa&#x27;</span><br>  border: <span class="hljs-string">&#x27;#eeeeee&#x27;</span><br>  <span class="hljs-built_in">text</span>-dark: <span class="hljs-string">&#x27;#dddddd&#x27;</span><br>  <span class="hljs-built_in">text</span>-secondary-dark: <span class="hljs-string">&#x27;#9899ab&#x27;</span><br>  <span class="hljs-built_in">text</span>-third-dark: <span class="hljs-string">&#x27;#7d8594&#x27;</span><br>  <span class="hljs-built_in">background</span>-dark: <span class="hljs-string">&#x27;#1e2128&#x27;</span><br>  <span class="hljs-built_in">background</span>-secondary-dark: <span class="hljs-string">&#x27;#1a1d22&#x27;</span><br>  border-dark: <span class="hljs-string">&#x27;#2b3038&#x27;</span><br>  link: <span class="hljs-string">&#x27;#FF3B00&#x27;</span><br></code></pre></td></tr></table></figure>
-
-<p>可以使用 <code>十六进制</code>、<code>rgba</code>、<code>颜色名称</code> 方式，注意需要用引号包裹。</p>
-<p>目前有两套颜色模式，分别是 <strong>浅色模式（白天）</strong> 和 <strong>深色模式（黑夜）</strong>，请注意颜色搭配。<code>link</code> 为强调色，表现为 <code>hover</code>、<code>active</code> 等。</p>
-<p>分享几个配色网站：<a href="https://colors.ichuantong.cn/">中国传统颜色</a>、<a href="https://nipponcolors.com/">日本传统颜色</a></p>
-<h3 id="站点图标"><a href="#站点图标" class="headerlink" title="站点图标"></a>站点图标</h3><p>配置项 <code>favicon</code> 可设置站点图标，建议使用 <code>ico</code> 或 <code>png</code> 格式。</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># Favicon</span><br><span class="hljs-symbol">favicon:</span><br><span class="hljs-symbol">  small:</span> <span class="hljs-meta-keyword">/images/</span>icons/favicon<span class="hljs-number">-16</span>x16.png<br><span class="hljs-symbol">  medium:</span> <span class="hljs-meta-keyword">/images/</span>icons/favicon<span class="hljs-number">-32</span>x32.png<br><span class="hljs-symbol">  apple_touch_icon:</span> <span class="hljs-meta-keyword">/images/</span>icons/apple-touch-icon.png<br><span class="hljs-symbol">  safari_pinned_tab:</span> <span class="hljs-meta-keyword">/images/</span>icons/stun-logo.svg<br><span class="hljs-symbol">  msapplication:</span> <span class="hljs-meta-keyword">/images/</span>icons/favicon<span class="hljs-number">-144</span>x144.png<br></code></pre></td></tr></table></figure>
-
-<p>有多种尺寸的图片需要配置，可以参考默认图标的尺寸用 <code>PS</code> 裁剪，或使用：<a href="https://icon.wuruihong.com/">图标工厂</a></p>
-<h3 id="全局字体"><a href="#全局字体" class="headerlink" title="全局字体"></a>全局字体</h3><p>配置项 <code>font</code> 中可设置全局字体的 <strong>大小</strong> 和 <strong>风格系列</strong>。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css"># <span class="hljs-attribute">Font</span><br><span class="hljs-attribute">font</span>:<br>  size: <span class="hljs-number">14px</span><br>  family: <span class="hljs-string">&#x27;Hiragino Sans GB&#x27;</span>, <span class="hljs-string">&#x27;Hiragino Sans GB W3&#x27;</span>, <span class="hljs-string">&#x27;Microsoft YaHei&#x27;</span>, <span class="hljs-string">&#x27;WenQuanYi Micro Hei&#x27;</span>, sans-serif<br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>size</code>: 字体大小。</li>
-<li><code>family</code>: 字体风格系列。</li>
-</ul>
-<h3 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h3><p>配置项 <code>background_image</code> 可设置背景图片，直接填写图片地址即可。</p>
-<figure class="highlight avrasm"><table><tr><td class="code"><pre><code class="hljs avrasm"><span class="hljs-meta"># Background Image</span><br><span class="hljs-symbol">background_image:</span><br></code></pre></td></tr></table></figure>
-
-<p>tips: 建议不设置背景图片，默认的 <strong>纯白背景</strong> 最搭配，背景颜色也可在 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2">主题颜色</a> 中设置。</p>
-<h3 id="加载动画-Loading"><a href="#加载动画-Loading" class="headerlink" title="加载动画 (Loading)"></a>加载动画 (Loading)</h3><p>配置项 <code>loading</code> 可设置载入动画，会在 <em>页面跳转*、</em>懒加载* 时加载，目前仅支持图片形式。</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk"><span class="hljs-comment"># Loading</span><br>loading: <span class="hljs-regexp">/images/</span>theme/loading.gif<br></code></pre></td></tr></table></figure>
-
-<p>建议使用 <code>gif</code> 动图，可在 <a href="https://lottiefiles.com/">LottieFiles</a> 下载。</p>
-<p>tips: 未来将支持自定义 <code>css</code>、<code>svg</code> 等多种方式的载入动画，敬请期待。</p>
-<h3 id="欢迎页面"><a href="#欢迎页面" class="headerlink" title="欢迎页面"></a>欢迎页面</h3><p>配置项 <code>preview</code> 中的一些列配置可自定义欢迎页面。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Preview</span><br><span class="hljs-attr">preview:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">model:</span> <span class="hljs-string">wave</span> <span class="hljs-comment"># wave cloud</span><br>  <span class="hljs-attr">background:</span> <br>    <span class="hljs-attr">type:</span> <span class="hljs-string">image</span> <span class="hljs-comment"># image video</span><br>    <span class="hljs-attr">default_image:</span><br>      <span class="hljs-attr">light:</span> <span class="hljs-string">/images/theme/welcome-image.jpg</span><br>      <span class="hljs-attr">dark:</span> <span class="hljs-string">/images/theme/welcome-image.jpg</span><br>    <span class="hljs-attr">video:</span><br>    <span class="hljs-attr">api:</span> <span class="hljs-comment"># https://source.unsplash.com/random/1920x1080</span><br>    <span class="hljs-attr">size:</span> <span class="hljs-string">cover</span> <span class="hljs-comment"># css: background-size</span><br>    <span class="hljs-attr">position:</span> <span class="hljs-string">center</span> <span class="hljs-comment"># css: background-position</span><br>  <span class="hljs-attr">motto:</span><br>    <span class="hljs-attr">default:</span> <span class="hljs-string">我在开了灯的床头下，想问问自己的心啊。</span><br>    <span class="hljs-attr">api:</span> <span class="hljs-string">https://v1.hitokoto.cn/?encode=text&amp;c=j</span><br>    <span class="hljs-attr">color:</span> <span class="hljs-string">&#x27;#ffffff&#x27;</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>enable</code>: 用来 <em>开启</em> / <em>关闭</em> 欢迎页面。</li>
-</ul>
-<h4 id="效果模式"><a href="#效果模式" class="headerlink" title="效果模式"></a>效果模式</h4><ul>
-<li><code>model</code>: 设置效果模式，有 *<strong>波浪（wave）</strong> 和 <strong>云层（cloud）</strong> 两种模式可选择。</li>
-</ul>
-<h4 id="欢迎图片"><a href="#欢迎图片" class="headerlink" title="欢迎图片"></a>欢迎图片</h4><p>配置项 <code>background</code> 用来设置欢迎图片，其中：</p>
-<ul>
-<li><code>type</code>: 图片或视频。</li>
-<li><code>default_image</code>: 配置静态图片，填写静态图片 <code>URL</code> 即可。开启 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F">深色模式</a> 后支持配置 深色/浅色 两种模式下的背景图片。</li>
-<li><code>video</code>: 配置动态视频，填写视频 <code>URL</code> 即可。</li>
-<li><code>api</code>: 配置随机图片，可使用第三方 <code>API</code>，优先级 <em>随机图片（api）</em> &gt; <em>静态图片（default）</em>。推荐 <code>API</code>：<a href="https://source.unsplash.com/random/1920x1080">Unsplash</a>、<a href="https://api.vvhan.com/api/bing?type=sj">必应图片</a>。</li>
-<li><code>size</code> 和 <code>position</code>: 设置图片的 <strong>尺寸</strong> 和 <strong>位置</strong>，参考 <code>CSS</code> 中的属性即可。</li>
-</ul>
-<h4 id="格言"><a href="#格言" class="headerlink" title="格言"></a>格言</h4><p>配置项 <code>motto</code> 用来设置格言，其中：</p>
-<ul>
-<li><code>default</code>: 配置静态格言，填写格言文本即可。</li>
-<li><code>api</code>: 配置随机格言，可使用第三方 <code>API</code>，优先级 <em>随机格言（api）</em> &gt; <em>静态格言（default）</em>。推荐 <code>API</code>：<a href="https://hitokoto.cn/">一言</a>、<a href="https://www.jinrishici.com/">今日诗词</a>。</li>
-<li><code>color</code> 配置文字颜色。</li>
-</ul>
-<h3 id="全局搜索"><a href="#全局搜索" class="headerlink" title="全局搜索"></a>全局搜索</h3><p>前置条件：需要开启<a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%A4%B4%E9%83%A8%E5%AF%BC%E8%88%AA">头部导航</a>，否则会找不到入口滴。</p>
-<p>目前仅支持静态搜索能力（渲染时生成搜索索引文件），需要安装 <a href="https://github.com/theme-next/hexo-generator-searchdb">hexo-generator-searchdb</a> 插件提供支持。</p>
-<p>安装 <code>hexo-generator-searchdb</code> 插件：</p>
-<figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">$ npm install hexo-generator-searchdb <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
-
-<p>开启插件，在 <strong>博客配置</strong> 下新增：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">search:</span><br>  <span class="hljs-attr">path:</span> <span class="hljs-string">/search.xml</span>  <span class="hljs-comment"># 索引生成路径（需要设置绝对路径，否则二级页面读不到）</span><br>  <span class="hljs-attr">field:</span> <span class="hljs-string">post</span>  <span class="hljs-comment"># post page all</span><br>  <span class="hljs-attr">format:</span> <span class="hljs-string">html</span>  <span class="hljs-comment"># 只支持 html 类型</span><br>  <span class="hljs-attr">content:</span> <span class="hljs-literal">true</span>  <span class="hljs-comment"># 是否包含正文内容</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="版权信息"><a href="#版权信息" class="headerlink" title="版权信息"></a>版权信息</h3><p>配置项 <code>copyright</code> 用来设置页面底部显示的网站版权信息，填写 <strong>文本内容</strong> 或 <strong>HTML</strong> 即可。</p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-comment"># Copyright</span><br>copyright: &lt;p&gt;Powered by &lt;a <span class="hljs-attribute">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-string">&quot;https://hexo.io&quot;</span>&gt;Hexo&lt;/a&gt;  |  Theme - &lt;a <span class="hljs-attribute">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-string">&quot;https://github.com/izhaoo/hexo-theme-zhaoo&quot;</span>&gt;zhaoo&lt;/a&gt;&lt;/p&gt;<br></code></pre></td></tr></table></figure>
-
-<h3 id="社交链接"><a href="#社交链接" class="headerlink" title="社交链接"></a>社交链接</h3><p>配置项 <code>social</code> 用来配置社交链接，在页面底部以 <code>Icon</code> 图标的形式展示，点击即可链接第三方平台。</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk"><span class="hljs-comment"># Social</span><br>social:<br>  qq: tencent:<span class="hljs-regexp">//m</span>essage/?Menu=yes&amp;uin=<span class="hljs-number">894519210</span> || iconQQ || <span class="hljs-string">&#x27;#12B7F5&#x27;</span><br>  wechat: javascript:; || iconwechat-fill || <span class="hljs-string">&#x27;#09BB07&#x27;</span><br>  instagram: https:<span class="hljs-regexp">//</span>www.instagram.com<span class="hljs-regexp">/izhaoo/</span> || iconinstagram || <span class="hljs-string">&#x27;#DA2E76&#x27;</span><br>  github: https:<span class="hljs-regexp">//gi</span>thub.com/izhaoo || icongithub-fill || <span class="hljs-string">&#x27;#24292E&#x27;</span><br>  email: mailto:izhaoo@<span class="hljs-number">163</span>.com || iconmail<br></code></pre></td></tr></table></figure>
-
-<p>配置内容分为三部分，以 <code>||</code> 划分。第一部分是 <em>社交链接</em> ，第二部分是 <em>图标样式（IconFont）</em> ，第三部分是 <em>选中颜色（hover）</em>。</p>
-<h3 id="右下角按钮-Fab"><a href="#右下角按钮-Fab" class="headerlink" title="右下角按钮 (Fab)"></a>右下角按钮 (Fab)</h3><p>配置项 <code>fab</code> 用于配置右下角的按钮。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Fab (Float Action Button)</span><br><span class="hljs-attr">fab:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">always_show:</span> <span class="hljs-literal">false</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>enable</code>: 设置 <em>开启</em> / <em>关闭</em> 按钮。</li>
-<li><code>always_show</code>: 设置 <em>一直显示</em> / <em>过渡隐藏</em> 按钮。</li>
-</ul>
-<h3 id="二维码"><a href="#二维码" class="headerlink" title="二维码"></a>二维码</h3><p>配置项 <code>qrcode</code> 用来设置 <strong>二维码</strong>，开启后点击 <strong>导航栏</strong> 左侧的图标即可显示。</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># QR Code</span><br><span class="hljs-symbol">qrcode:</span><br><span class="hljs-symbol">  enable:</span> true<br><span class="hljs-symbol">  type:</span> image <span class="hljs-meta"># url image</span><br><span class="hljs-symbol">  image:</span> https:<span class="hljs-comment">//pic.izhaoo.com/weapp-code.jpg</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>enable</code>: 设置 <em>开启</em> / <em>关闭</em> 二维码功能。</li>
-<li><code>type</code>: 设置二维码模式，有两种模式可选。<code>url</code> 显示当前文章链接生成的二维码；<code>image</code> 显示固定的二维码图片（如小程序码等）。</li>
-<li><code>image</code>: 选择 <code>image</code> 模式时需要指定图片链接。</li>
-</ul>
-<h3 id="深色模式"><a href="#深色模式" class="headerlink" title="深色模式"></a>深色模式</h3><p>配置项 <code>color_mode</code> 用来配置 <strong>深色模式</strong>。开启后主题会根据设备系统自动切换颜色模式，用户也可以点击 <strong>导航栏</strong> 左侧的图标手动切换颜色模式，系统会暂存用户选择状态。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Color Mode</span><br><span class="hljs-attr">color_mode:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> 深色模式。</li>
-</ul>
-<p><em>深色模式</em> / <em>浅色模式</em> 的颜色可以参考 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2">主题颜色</a> 设置。</p>
-<h3 id="哀悼模式"><a href="#哀悼模式" class="headerlink" title="哀悼模式"></a>哀悼模式</h3><p>在举国默哀的日子，我们可以将博客灰化，通过配置项 <code>gray</code> 设置。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Gray (Mourning Mode)</span><br><span class="hljs-attr">gray:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span>  <span class="hljs-comment">#开启哀悼模式</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> 哀悼模式。</li>
-</ul>
-<p><a href="https://pic.izhaoo.com/20201016102727.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/20201016102727.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>哀悼</strong></p>
-<h2 id="文章配置"><a href="#文章配置" class="headerlink" title="文章配置"></a>文章配置</h2><h3 id="文章封面"><a href="#文章封面" class="headerlink" title="文章封面"></a>文章封面</h3><h4 id="单独封面"><a href="#单独封面" class="headerlink" title="单独封面"></a>单独封面</h4><p>可以为每篇文章设置单独的文章封面图片，在文章 <code>Front-matter</code> 中添加 <code>image</code> 字段设置图片。</p>
-<p>若使用图床，直接添加图片文件的 <strong>完整URL</strong> 即可：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">zhaoo</span> <span class="hljs-bullet">-</span> <span class="hljs-string">主题文档</span><br><span class="hljs-attr">image:</span> <span class="hljs-string">https://pic.izhaoo.com/20200421200902.jpg</span>  <span class="hljs-comment">#设置图床图片</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<p>若将图片储存在本地，现将图片文件复制到主题 <code>~/zhaoo/source/images</code> 下，再添加 <strong>相对URL</strong> 即可：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">zhaoo</span> <span class="hljs-bullet">-</span> <span class="hljs-string">主题使用文档</span><br><span class="hljs-attr">image:</span> <span class="hljs-string">/images/20200421200902.jpg</span>  <span class="hljs-comment">#设置本地图片</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<h4 id="默认封面"><a href="#默认封面" class="headerlink" title="默认封面"></a>默认封面</h4><p>配置项 <code>post_image</code> 设置配置文章默认封面，就不用为每篇文章单独设置封面了：</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># Post Image</span><br><span class="hljs-symbol">post_image:</span><br><span class="hljs-symbol">  random:</span> galleries <span class="hljs-meta"># local galleries</span><br><span class="hljs-symbol">  default:</span> <span class="hljs-meta-keyword">/images/</span>theme/post-image.jpg<br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>random</code>: 设置随机封面，有 <strong>galleries（相册图库）</strong> 和 <strong>local（本地图库）</strong> 两种模式。开启 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E7%9B%B8%E5%86%8C">相册</a> 功能后会自动调取相册中的图片；本地图库需要新建 <code>/_data/local_images.json</code> 文件，填写图片 <code>URL</code> 列表即可。</li>
-<li><code>default</code>: 未设置随机封面时启用 <strong>默认封面</strong>，填写图片 <code>URL</code> 即可。</li>
-</ul>
-<figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json"><span class="hljs-comment">// local_images.json</span><br>[<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/2014031601.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/2017071602.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/2017071603.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/2017072104.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/2017072705.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/20200421201200.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/20200305030152.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/20191211065241.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/20200228081718.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/20191211065844.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/20200718151924.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/20200718152003.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/20200718152045.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/20200718152122.jpg&quot;</span>,<br>  <span class="hljs-string">&quot;https://pic.izhaoo.com/20200718151427.jpg&quot;</span><br>]<br></code></pre></td></tr></table></figure>
-
-<h3 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a>关键词</h3><p>在文章 <code>Front-matter</code> 中添加 <code>keywords</code> 字段设置关键词：</p>
-<figure class="highlight avrasm"><table><tr><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">title:</span> zhaoo - 主题使用文档<br><span class="hljs-symbol">keywords:</span> hexo-theme-zhaoo, hexo, 主题, 使用文档, document<br></code></pre></td></tr></table></figure>
-
-<p>配置项 <code>keywords</code> 为网站设置全局关键词，每个页面都会渲染，文章中无需重复添加：</p>
-<figure class="highlight avrasm"><table><tr><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">keywords:</span> hexo-theme-zhaoo, hexo<br></code></pre></td></tr></table></figure>
-
-<h3 id="文章尺寸"><a href="#文章尺寸" class="headerlink" title="文章尺寸"></a>文章尺寸</h3><p>配置项 <code>post_page_size</code> 用于设置文章内容主体部分的相关尺寸。</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># Page Size</span><br><span class="hljs-symbol">post_page_size:</span><br><span class="hljs-symbol">  width:</span> <span class="hljs-number">800</span>px<br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>width</code>: 设置内容宽度。</li>
-</ul>
-<p>tips: 受外部元素的限制，<em>实际尺寸</em> 由计算后得出，不能保证与 <em>设定尺寸</em> 完全相等，只能保证接近该尺寸。</p>
-<h3 id="图片标注"><a href="#图片标注" class="headerlink" title="图片标注"></a>图片标注</h3><p>配置项 <code>caption</code> 用于设置 <strong>图片标注</strong>，开启后会在文章图片下方生成标注。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Caption</span><br><span class="hljs-attr">caption:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> 图片标注。</li>
-</ul>
-<h3 id="文章目录"><a href="#文章目录" class="headerlink" title="文章目录"></a>文章目录</h3><p>配置项 <code>toc</code> 用于设置 <strong>文章目录</strong>，开启后会在文章内容右侧生成目录，点击目录可平滑到对应的标题处。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># TOC</span><br><span class="hljs-attr">toc:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">min_depth:</span> <span class="hljs-number">1</span><br>  <span class="hljs-attr">max_depth:</span> <span class="hljs-number">3</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> 文章目录。</li>
-<li><code>min_depth</code>:</li>
-<li><code>max_depth</code>:</li>
-</ul>
-<p>全局开启 <strong>文章目录</strong> 后，可以在文章 <code>Front-matter</code> 中添加 <code>toc</code> 字段单独控制该文章是否展示文章目录。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">zhaoo</span> <span class="hljs-bullet">-</span> <span class="hljs-string">主题文档</span><br><span class="hljs-attr">toc:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># 关闭文章目录</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="打赏二维码"><a href="#打赏二维码" class="headerlink" title="打赏二维码"></a>打赏二维码</h3><p>配置项 <code>donate</code> 用于设置 <strong>打赏二维码</strong>，开启后可在文章下方展示二维码，扫一扫请博主喝杯咖啡吧~</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># Donate</span><br><span class="hljs-symbol">donate:</span><br><span class="hljs-symbol">  enable:</span> true<br><span class="hljs-symbol">  alipay:</span> https:<span class="hljs-comment">//pic.izhaoo.com/alipay.jpg</span><br><span class="hljs-symbol">  wechat:</span> https:<span class="hljs-comment">//pic.izhaoo.com/wechat.jpg</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> 打赏二维码。</li>
-<li><code>alipay</code>: 支付宝收款二维码，填写图片 <code>URL</code>。</li>
-<li><code>wechat</code>: 微信收款二维码，填写图片 <code>URL</code>。</li>
-</ul>
-<h3 id="文章版权"><a href="#文章版权" class="headerlink" title="文章版权"></a>文章版权</h3><p>配置项 <code>post_copyright</code> 用于设置 <strong>文章版权</strong>，开启后可在文章下方展示版权信息。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Copyright</span><br><span class="hljs-attr">post_copyright:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> 文章版权信息。</li>
-</ul>
-<p>全局开启 <strong>文章版权</strong> 后，可以在文章 <code>Front-matter</code> 中添加 <code>copyright</code> 字段单独控制该文章是否展示文章版权。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">zhaoo</span> <span class="hljs-bullet">-</span> <span class="hljs-string">主题文档</span><br><span class="hljs-attr">copyright:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># 关闭文章版权</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="文章搬运"><a href="#文章搬运" class="headerlink" title="文章搬运"></a>文章搬运</h3><p>配置项 <code>carrier</code> 用于开启 <strong>文章搬运</strong> 功能，方便博主们全文“借鉴”文章，效果如下：</p>
-<p><a href="https://pic.izhaoo.com/20200727125519.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/20200727125519.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>文章搬运</strong></p>
-<p><a href="https://pic.izhaoo.com/20200727125724.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/20200727125724.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>弹窗提示</strong></p>
-<p>前置条件：全局开启 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83">文章版权</a></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Carrier</span><br><span class="hljs-attr">carrier:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">markdown</span> <span class="hljs-comment"># markdown html text</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> 文章搬运。</li>
-<li><code>type</code>: 搬运模式，可选择一键复制 <code>markdown</code>、<code>html</code>、<code>text</code> 格式的文章。</li>
-</ul>
+<ol>
+<li><p>马克思主义的国家观：</p>
+<ol>
+<li>社会一定发展阶段的产物</li>
+<li>社会由于陷入不可调和的自我矛盾，分裂为不可调和的对立面而又无力摆脱这些对立面</li>
+<li>为了避免这些对立面，这些经济利益互相冲突的阶级在斗争中把自己和社会消灭</li>
+<li>需要一种凌驾于社会之上的力量，从而来缓和冲突</li>
+</ol>
+<p>这种从社会中产生但又自居于社会之上并且日益同社会相异化的<a href="https://www.notion.so/51d7cfc92b204e74811d37cc1484c2b8">力量</a>，就是国家</p>
 <blockquote>
-<p><a href="http://localhost:4000/2020/07/25/hexo-article-carrier/">Hexo - 开发文章搬运功能</a></p>
+<p>①国家是阶级矛盾<strong>不可调和</strong>的产物和表现②在阶级矛盾客观上不能调和的地方，时候和条件下，便产生了国家（反过来说，<strong>国家的存在证明阶级矛盾不可调和</strong>）</p>
 </blockquote>
-<h3 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a>文章置顶</h3><p>找到 <code>/node_modules/hexo-generator-index/lib/generator.js</code> 文件，替换成如下代码：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-meta">&#x27;use strict&#x27;</span>;<br><span class="hljs-keyword">var</span> pagination = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;hexo-pagination&#x27;</span>);<br><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">locals</span>) </span>&#123;<br>  <span class="hljs-keyword">var</span> config = <span class="hljs-built_in">this</span>.config;<br>  <span class="hljs-keyword">var</span> posts = locals.posts;<br>  posts.data = posts.data.sort(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">a, b</span>) </span>&#123;<br>    <span class="hljs-keyword">if</span> (a.top &amp;&amp; b.top) &#123;<br>      <span class="hljs-keyword">if</span> (a.top == b.top) <span class="hljs-keyword">return</span> b.date - a.date;<br>      <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> b.top - a.top;<br>    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a.top &amp;&amp; !b.top) &#123;<br>      <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;<br>    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (!a.top &amp;&amp; b.top) &#123;<br>      <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;<br>    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> b.date - a.date;<br>  &#125;);<br>  <span class="hljs-keyword">var</span> paginationDir = config.pagination_dir || <span class="hljs-string">&#x27;page&#x27;</span>;<br>  <span class="hljs-keyword">return</span> pagination(<span class="hljs-string">&#x27;&#x27;</span>, posts, &#123;<br>    <span class="hljs-attr">perPage</span>: config.index_generator.per_page,<br>    <span class="hljs-attr">layout</span>: [<span class="hljs-string">&#x27;index&#x27;</span>, <span class="hljs-string">&#x27;archive&#x27;</span>],<br>    <span class="hljs-attr">format</span>: paginationDir + <span class="hljs-string">&#x27;/%d/&#x27;</span>,<br>    <span class="hljs-attr">data</span>: &#123;<br>      <span class="hljs-attr">__index</span>: <span class="hljs-literal">true</span><br>    &#125;<br>  &#125;);<br>&#125;;<br></code></pre></td></tr></table></figure>
-
-<p>在文章的 <code>Front-matter</code> 中添加 <code>top</code> 字段，指定数值。数值越大，显示越靠前。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">zhaoo</span> <span class="hljs-bullet">-</span> <span class="hljs-string">主题使用文档</span><br><span class="hljs-attr">top:</span> <span class="hljs-number">10</span>  <span class="hljs-comment">#添加该字段</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h3><h4 id="MathJax"><a href="#MathJax" class="headerlink" title="MathJax"></a>MathJax</h4><blockquote>
-<p><a href="https://github.com/ikeq/hexo-filter-mathjax-ssr">hexo-filter-mathjax-ssr</a></p>
-</blockquote>
-<p>以 <code>svg</code> 的形式渲染数学公式，兼容性较好，推荐使用。</p>
-<p>安装 <code>MathJax</code> 插件依赖：</p>
-<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><code class="hljs livecodeserver">$ npm install hexo-<span class="hljs-built_in">filter</span>-mathjax-ssr <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
-
-<p>开启插件，在 <strong>博客配置</strong> 下新增：</p>
-<figure class="highlight prolog"><table><tr><td class="code"><pre><code class="hljs prolog">mathjax:<br>  inlineQuote: [<span class="hljs-string">&#x27;&#x27;</span>]<br>  blockQuote: [<span class="hljs-string">&#x27;MATHJAX-SSR-2&#x27;</span>]<br></code></pre></td></tr></table></figure>
-
-<h4 id="KaTex"><a href="#KaTex" class="headerlink" title="KaTex"></a>KaTex</h4><blockquote>
-<p><a href="https://github.com/thcd/hexo-katex">hexo-katex</a></p>
-</blockquote>
-<p>以 <code>HTML</code> 标签的形式渲染数学公式，渲染速度较快，语法较简单，但是兼容性不是很好。</p>
-<p>安装渲染引擎 <code>hexo-renderer-pandoc</code>：</p>
-<figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">$ npm install hexo-renderer-pandoc <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
-
-<p>安装 <code>KaTex</code> 插件依赖：</p>
-<figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">$ npm install hexo-katex <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
-
-<p>开启插件，在 <strong>博客配置</strong> 下新增：</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">pandoc:</span><br><span class="hljs-symbol">  mathEngine:</span> katex<br></code></pre></td></tr></table></figure>
-
-<h2 id="页面配置"><a href="#页面配置" class="headerlink" title="页面配置"></a>页面配置</h2><h3 id="相册页面"><a href="#相册页面" class="headerlink" title="相册页面"></a>相册页面</h3><blockquote>
-<p>【瀑布流风格相册】由 <a href="https://github.com/HelloAny">AmiKara</a> 友情贡献~</p>
-</blockquote>
-<p>执行以下命令创建相册页面，会在 <code>source</code> 目录生成 <code>galleries/index.md</code> 文件：</p>
-<figure class="highlight haxe"><table><tr><td class="code"><pre><code class="hljs haxe">$ hexo <span class="hljs-keyword">new</span> <span class="hljs-type">page</span> galleries  <span class="hljs-meta">#创建相册页面</span><br></code></pre></td></tr></table></figure>
-
-<p>打开 <code>source/galleries/index.md</code> 文件，设置 <code>Front-matter</code> ，开启相册页面：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">相册</span><br><span class="hljs-attr">layout:</span> <span class="hljs-string">&quot;galleries&quot;</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<p>参考 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置相册页面的导航：</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">menu:</span><br><span class="hljs-symbol">  galleries:</span> /galleries || 相册<br></code></pre></td></tr></table></figure>
-
-<p>配置项 <code>galleries</code> 用于开启相册功能：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">galleries:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">title:</span> <span class="hljs-string">相册</span><br>  <span class="hljs-attr">subtitle:</span> <span class="hljs-string">Galleries</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">waterfull</span> <span class="hljs-comment"># waterful | grid</span><br>  <span class="hljs-attr">columns:</span> <span class="hljs-number">3</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> 相册功能。</li>
-<li><code>title</code>: 相册分类页面标题。</li>
-<li><code>subtitle</code> 相册分类页面副标题。</li>
-<li><code>type</code>: 相册显示风格，有 <em>瀑布流</em> 和 <em>正方形</em> 两种形式。</li>
-<li><code>columns</code>: 相册列数。</li>
+</li>
+<li><p>对马克思主义国家观的歪曲</p>
+<ol>
+<li>把国家说成为<strong>阶级调和</strong>的机关<ul>
+<li>马克思国家观中：①阶级矛盾无法调和②国家是阶级统治的机关，是一个阶级压迫另一个阶级的机关，是建立一种“秩序”来抑制阶级冲突，使这种压迫合法化，固定化</li>
 </ul>
-<p>在 <code>/_data</code> 目录下新建 <code>galleries.json</code> 文件，创建相册分类目录及图片内容：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json">[&#123;<br>  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;colorful&quot;</span>,  <span class="hljs-comment">//相册名称</span><br>  <span class="hljs-attr">&quot;cover&quot;</span>: <span class="hljs-string">&quot;/images/theme/post-image.jpg&quot;</span>,  <span class="hljs-comment">//相册封面</span><br>  <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;君未看花时，花与君同寂；君来看花日，花色一时明。&quot;</span>,  <span class="hljs-comment">//相册介绍</span><br>  <span class="hljs-attr">&quot;photos&quot;</span>: [  <span class="hljs-comment">//图片内容</span><br>    <span class="hljs-string">&quot;/images/theme/post-image.jpg&quot;</span>,<br>    <span class="hljs-string">&quot;/images/theme/post-image.jpg&quot;</span>,<br>    <span class="hljs-string">&quot;/images/theme/post-image.jpg&quot;</span>,<br>    <span class="hljs-string">&quot;/images/theme/post-image.jpg&quot;</span><br>  ]<br>&#125;, &#123;<br>  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;记事&quot;</span>,<br>  <span class="hljs-attr">&quot;cover&quot;</span>: <span class="hljs-string">&quot;/images/theme/post-image.jpg&quot;</span>,<br>  <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;翻开随身携带的记事本，写着许多事都是关于你。&quot;</span>,<br>  <span class="hljs-attr">&quot;photos&quot;</span>: [<br>    <span class="hljs-string">&quot;/images/theme/post-image.jpg&quot;</span>,<br>    <span class="hljs-string">&quot;/images/theme/post-image.jpg&quot;</span>,<br>    <span class="hljs-string">&quot;/images/theme/post-image.jpg&quot;</span>,<br>    <span class="hljs-string">&quot;/images/theme/post-image.jpg&quot;</span><br>  ]<br>&#125;]<br></code></pre></td></tr></table></figure>
-
-<p>在 <code>/source/galleries/</code> 目录下 <code>新建文件夹</code> ，命名需要和 <code>json</code> 中的 <code>name</code> 字段对应，例如：<em>colorful</em>、<em>记事</em>。 在文件夹下新建 <code>index.md</code> 文件，内容如下：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">记事</span>  <span class="hljs-comment">#名称也需要对应</span><br><span class="hljs-attr">layout:</span> <span class="hljs-string">&quot;gallery&quot;</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<p>步骤可能有点难以理解，最后放几张截图，比较直观：</p>
-<p><a href="https://pic.izhaoo.com/20200722185650.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/20200722185650.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>gallery-1</strong></p>
-<p><a href="https://pic.izhaoo.com/20200722185721.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/20200722185721.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>gallery-2</strong></p>
-<p><a href="https://pic.izhaoo.com/20200722185814.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/20200722185814.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>gallery-3</strong></p>
-<p><a href="https://pic.izhaoo.com/20200722185829.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/20200722185829.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>gallery-4</strong></p>
-<p>也可以参考 <code>/_example/source</code> 中的相关栗子。</p>
-<h3 id="归档页面"><a href="#归档页面" class="headerlink" title="归档页面"></a>归档页面</h3><p>参考 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置归档页面的导航，系统会按文章创建时间自动归档。</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">menu:</span><br><span class="hljs-symbol">  archives:</span> /archives || 归档<br></code></pre></td></tr></table></figure>
-
-<h3 id="标签页面"><a href="#标签页面" class="headerlink" title="标签页面"></a>标签页面</h3><p>执行以下命令创建标签页面，会在 <code>source</code> 目录生成 <code>tags/index.md</code> 文件：</p>
-<figure class="highlight haxe"><table><tr><td class="code"><pre><code class="hljs haxe">$ hexo <span class="hljs-keyword">new</span> <span class="hljs-type">page</span> tags  <span class="hljs-meta">#创建标签页面</span><br></code></pre></td></tr></table></figure>
-
-<p>打开 <code>source/tags/index.md</code> 文件，设置 <code>Front-matter</code> ，开启标签页面：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">标签</span><br><span class="hljs-attr">type:</span> <span class="hljs-string">&quot;tags&quot;</span><br><span class="hljs-attr">layout:</span> <span class="hljs-string">&quot;tags&quot;</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<p>参考 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置标签页面的导航：</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><code class="hljs vim"><span class="hljs-keyword">menu</span>:<br>  <span class="hljs-keyword">tag</span><span class="hljs-variable">s:</span> /<span class="hljs-keyword">tags</span> || 标签<br></code></pre></td></tr></table></figure>
-
-<p>创建文章时，在文章的 <code>Front-matter</code> 中使用 <code>tags</code> 字段添加标签即可：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">zhaoo</span> <span class="hljs-bullet">-</span> <span class="hljs-string">主题使用文档</span><br><span class="hljs-attr">tags:</span> [<span class="hljs-string">Hexo</span>, <span class="hljs-string">主题</span>]  <span class="hljs-comment">#设置标签</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="分类页面"><a href="#分类页面" class="headerlink" title="分类页面"></a>分类页面</h3><p>同标签页面，更改一些关键词即可。</p>
-<p>执行以下命令创建分类页面，会在 <code>source</code> 目录生成 <code>categories/index.md</code> 文件：</p>
-<figure class="highlight haxe"><table><tr><td class="code"><pre><code class="hljs haxe">$ hexo <span class="hljs-keyword">new</span> <span class="hljs-type">page</span> categories  <span class="hljs-meta">#创建分类页面</span><br></code></pre></td></tr></table></figure>
-
-<p>打开 <code>source/categories/index.md</code> 文件，设置 <code>Front-matter</code> ，开启分类页面：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">标签</span><br><span class="hljs-attr">type:</span> <span class="hljs-string">&quot;categories&quot;</span><br><span class="hljs-attr">layout:</span> <span class="hljs-string">&quot;categories&quot;</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<p>参考 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置分类页面的导航：</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">menu:</span><br><span class="hljs-symbol">  categories:</span> /categories || 分类<br></code></pre></td></tr></table></figure>
-
-<p>创建文章时，在文章的 <code>Front-matter</code> 中使用 <code>categories</code> 字段添加标签即可：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">zhaoo</span> <span class="hljs-bullet">-</span> <span class="hljs-string">主题使用文档</span><br><span class="hljs-attr">categories:</span>  <span class="hljs-comment">#设置分类</span><br><span class="hljs-bullet">-</span> <span class="hljs-string">项目</span><br><span class="hljs-bullet">-</span> <span class="hljs-string">博客</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="关于页面"><a href="#关于页面" class="headerlink" title="关于页面"></a>关于页面</h3><p>执行以下命令创建关于页面，会在 <code>source</code> 目录生成 <code>about/index.md</code> 文件：</p>
-<figure class="highlight haxe"><table><tr><td class="code"><pre><code class="hljs haxe">$ hexo <span class="hljs-keyword">new</span> <span class="hljs-type">page</span> about  <span class="hljs-meta">#创建关于页面</span><br></code></pre></td></tr></table></figure>
-
-<p>打开 <code>source/about/index.md</code> 文件，设置 <code>Front-matter</code> ，开启关于页面：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">标签</span><br><span class="hljs-attr">type:</span> <span class="hljs-string">&quot;about&quot;</span><br><span class="hljs-attr">layout:</span> <span class="hljs-string">&quot;about&quot;</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<p>参考 <a href="https://www.izhaoo.com/2020/05/05/hexo-theme-zhaoo-doc/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置关于页面的导航：</p>
-<figure class="highlight mel"><table><tr><td class="code"><pre><code class="hljs mel"><span class="hljs-keyword">menu</span>:<br>  <span class="hljs-keyword">about</span>: /<span class="hljs-keyword">about</span> || 关于<br></code></pre></td></tr></table></figure>
-
-<p>在 <code>source/about/index.md</code> 中编写关于内容，如同写文章一样。</p>
-<p>tips: 建议在 <strong>关于页面</strong> 关闭 <em>文章目录</em> 和 <em>文章版权</em> 功能，在 <code>Front-matter</code> 中添加 <code>toc</code> 和 <code>copyright</code> 字段都设置为 <code>false</code> 即可。</p>
-<h2 id="插件配置"><a href="#插件配置" class="headerlink" title="插件配置"></a>插件配置</h2><h3 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h3><p>配置项 <code>comments</code> 用于配置评论系统，目前支持 <strong>Gitalk</strong>、<strong>Valine</strong>、<strong>畅言</strong> 三种评论系统。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Comment</span><br><span class="hljs-attr">comments:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">valine</span><br>  <span class="hljs-attr">button:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
-
+</li>
+<li>“考茨基主义者“忽视并抹杀了：被压迫阶级要求得到解放，不仅非进行<strong>暴力革命</strong>不可，而且<strong>非消灭统治阶级所建立的，体现这种”异化“的国家政权机构</strong>不可</li>
+</ol>
+</li>
+</ol>
+<h2 id="特殊的武装队伍，监狱等等"><a href="#特殊的武装队伍，监狱等等" class="headerlink" title="特殊的武装队伍，监狱等等"></a>特殊的武装队伍，监狱等等</h2><ol>
+<li><p>国家之于旧式氏族，克兰组织的不同</p>
 <ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> 评论功能。</li>
-<li><code>type</code>: 开启哪种评论系统，需要配置对应的评论系统。（参考下文）</li>
-<li><code>button</code>: <em>显示</em> / <em>隐藏</em> 评论按钮，隐藏按钮后将直接展示评论。</li>
+<li>其按照地区来划分国民</li>
+<li>公共权力的设立（<strong>从社会分裂为阶级后，居民的自动的武装组织已经成为不可能</strong>），其中包括武装的人和物质的附属（监狱，强制设施等等）</li>
 </ul>
-<h4 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h4><p><strong>Gitalk</strong> 基于 <code>GitHub</code> 存储评论内容，优点是支持 <code>GitHub</code> 直接登录；缺点是需要 <strong>科学上网</strong> 才能访问，水土不服。</p>
-<p><a href="https://pic.izhaoo.com/2020111982651.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/2020111982651.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>Gitalk演示</strong></p>
-<p>首先需要在 <a href="https://github.com/new">GitHub</a> 创建一个仓库，如有 <code>GitHub Pages</code> 也可以共用一个仓库。</p>
-<p><a href="https://pic.izhaoo.com/202011193006.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/202011193006.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>创建仓库</strong></p>
-<p>接着创建一个 <a href="https://github.com/settings/applications/new">Github Application</a>，填写相应的参数。创建完成后会生成 <code>clientID</code> 和 <code>clientSecret</code>，记录一下。</p>
-<p><a href="https://pic.izhaoo.com/20201119203435.png"><img    class="lazyload" data-original="https://pic.izhaoo.com/20201119203435.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>创建应用</strong></p>
-<p>配置项 <code>gitalk</code> 用于配置 <code>Gitalk。</code></p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># Gitalk</span><br><span class="hljs-symbol">gitalk:</span><br><span class="hljs-symbol">  owner:</span><br><span class="hljs-symbol">  repo:</span><br><span class="hljs-symbol">  admin:</span><br><span class="hljs-symbol">  clientID:</span><br><span class="hljs-symbol">  clientSecret:</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p>国家“力量”的概念</p>
+<aside>
+💡 主要是拥有监狱等等的特殊的武装队伍</li>
+</ol>
+   </aside>
 
-<ul>
-<li><code>owner</code>: <code>GitHub</code> 的用户名。</li>
-<li><code>repo</code>: 创建的仓库名称。</li>
-<li><code>admin</code>: <code>GitHub</code> 的用户名。</li>
-<li><code>clientID</code>: 应用创建后生成。</li>
-<li><code>clientSecret</code>: 应用创建后生成。</li>
-</ul>
-<h4 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h4><p><code>Valine</code> 是基于 <a href="https://leancloud.cn/">LeanCloud</a> 实现的评论系统，小清新风格。</p>
-<p><a href="https://pic.izhaoo.com/2020111980022.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/2020111980022.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>Valine演示</strong></p>
-<p>首先在 <a href="https://leancloud.cn/">LeanCloud</a> 注册一个账号，并创建一个应用（开发版）。</p>
-<p>进入应用管理界面，点击【存储】-&gt;【创建Class】，名称为 <strong>Comment</strong>，访问权限为 <strong>所有用户</strong>，写入权限为 <strong>限制写入</strong>。</p>
-<p>在【设置】-&gt;【应用Keys】中复制 <code>appId</code> 和 <code>appKey</code>。</p>
-<p>配置项 <code>valine</code> 用于设置 <code>Valine</code> 评论系统。</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># Valine</span><br><span class="hljs-symbol">valine:</span><br><span class="hljs-symbol">  appId:</span><br><span class="hljs-symbol">  appKey:</span><br><span class="hljs-symbol">  placeholder:</span> 雁过留痕<br><span class="hljs-symbol">  avatar:</span> mp<br><span class="hljs-symbol">  pageSize:</span> <span class="hljs-number">10</span><br><span class="hljs-symbol">  lang:</span> zh-CN<br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> <code>Valine</code>。</li>
-<li><code>appId</code>: 填入刚才得到的 <code>appId</code>。</li>
-<li><code>appKey</code>: 填入刚才得到的 <code>appKey</code>。</li>
-<li><code>placeholder</code>: 未输入评论时的占位文字。</li>
-<li><code>mp</code>: 默认头像，参考 <a href="https://valine.js.org/avatar.html">Valine头像设置</a>。</li>
-<li><code>pageSize</code>: 每页评论数量。</li>
-<li><code>lang</code>: 系统语言。</li>
-</ul>
+<ol start="3">
+<li><p>常备军，警察与“居民的自动的武装组织”</p>
+<ol>
+<li>常备军和警察等国家政权强力工具的产生：<strong>社会分裂为不可调和地敌对阶级这个主要的基本事实</strong></li>
+<li>而居民的自动的武装组织从属于阶级，如果这些阶级都有自动的武装，那阶级冲突会不可避免的导致武装斗争</li>
+<li><strong>于是国家产生了，特殊的力量即特殊的武装队伍建立起来了</strong>（且公共权力随着阶级对立的尖锐和国家规模和人口的扩大而得到加强）</li>
+</ol>
+</li>
+</ol>
+<h2 id="国家是剥削被压迫阶级的工具"><a href="#国家是剥削被压迫阶级的工具" class="headerlink" title="国家是剥削被压迫阶级的工具"></a>国家是剥削被压迫阶级的工具</h2><ol>
+<li><p>国家公共权力的特权地位问题</p>
+<ol>
+<li>由于国家是从控制阶级对立的需要中产生，由于它同时又是在这些阶级的冲突中产生，所以，它照例是最强大的，在经济上占统治地位的阶级的国家，这个阶级借助于国家而在政治上也成为占统治地位的阶级，因而获得了镇压和剥削被压迫阶级的新手段</li>
+<li>当互相斗争的各阶级达到势均力敌的地步时，国家权力作为表面上的调停人暂时的获得了对于两个阶级的某种独立性（如波拿巴主义，俾斯麦，以及苏维埃克伦斯基政府等等）</li>
+</ol>
+</li>
+<li><p>国家公共权力的财富问题</p>
+<ol>
+<li><p>为了维持特殊的，凌驾于社会之上的公共权力，就需要捐税和国债</p>
+</li>
+<li><p>“财富是间接地但也是更可靠的运用它的权力的“</p>
+<ol>
+<li>直接收买官吏（美国）</li>
+<li>政府和交易所结成联盟（法国和美国）</li>
+</ol>
+</li>
+<li><p>财富的无限权力在民主共和制下更可靠</p>
+<ol>
+<li>民主共和制是资本主义所能采用的最好的政治外壳</li>
+<li>普选制是资产阶级统治的工具</li>
+</ol>
 <blockquote>
-<p><a href="https://valine.js.org/">Valine</a></p>
+<p>测量工人阶级成熟性的标尺。在现今的国家里，普选制不能而且永远不会提供更多东西</p>
 </blockquote>
-<h4 id="畅言"><a href="#畅言" class="headerlink" title="畅言"></a>畅言</h4><p><strong>畅言</strong> 是搜狐家的评论系统，优点是支持 <code>QQ</code>、<code>手机</code>、<code>邮箱</code> 等多种登录方式，接地气；个人感觉 <code>UI</code> 不是我的菜。</p>
-<p><a href="https://pic.izhaoo.com/2020111984224.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/2020111984224.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>畅言演示</strong></p>
-<p>在 <a href="http://changyan.kuaizhan.com/">畅言</a> 注册账号，进入后台创建一个站点，在【后台总览】记录一下 <code>APP ID</code> 和 <code>APP KEY</code>。</p>
-<p>配置项 <code>changyan</code> 用于设置 <code>畅言评论</code>。</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># ChangYan</span><br><span class="hljs-symbol">changyan:</span><br><span class="hljs-symbol">  appId:</span><br><span class="hljs-symbol">  conf:</span><br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>恩格斯关于国家的阐述</p>
+</li>
+</ol>
+<aside>
+💡 所以，国家并不是从来就有的。曾经有过不需要国家而且根本不知国家和国家权力为何物的社会。在经济发展到一定阶段必然使社会分裂为阶级时，国家就由于这种分裂而成为必要了。现在我们正在以迅速的步伐走向这样的生产发展阶段，在这个阶段上，这些阶级的存在不仅不再必要，而且成了生产的真正障碍。阶级不可避免地要消失，正如它们从前不可避免地产生一样。随着阶级的消失，国家也不可避免地要消失。在生产者自由平等的联合体的基础上按新的方式来组织生产的社会，将把全部国家机器放到它应该去的地方，即放到古物陈列馆去，同纺车和青铜斧陈列在一起
 
-<ul>
-<li><code>appId</code>: 生成的 <code>APP ID</code>。</li>
-<li><code>conf</code>: 生成的 <code>APP KEY</code>。</li>
-</ul>
-<p>畅言的相关配置在【管理后台】设置，可参考官方文档进行配置。</p>
-<h3 id="客户沟通-DaoVoice"><a href="#客户沟通-DaoVoice" class="headerlink" title="客户沟通 (DaoVoice)"></a>客户沟通 (DaoVoice)</h3><p><a href="http://www.daovoice.io/">DaoVoice</a> 是一款客户沟通插件，支持即时通讯、留言等形式反馈消息。</p>
-<p><a href="https://pic.izhaoo.com/20200808141245.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/20200808141245.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>DaoVoice演示</strong></p>
-<p>因为官方的 <code>Fab</code> 按钮 和 主题 <code>Fab</code> 按钮会重叠，所以作者同学把他集成到主题 <code>Fab</code> 中了。</p>
-<p><a href="https://pic.izhaoo.com/20200808141349.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/20200808141349.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>官网Fab</strong></p>
-<p><a href="https://pic.izhaoo.com/20200808141304.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/20200808141304.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>主题Fab</strong></p>
-<p>首先在 <a href="http://dashboard.daovoice.io/">DaoVoice</a> 官网上注册一个账号。</p>
-<p>在【安装应用】页面，复制 <code>app_id</code>。</p>
-<p><a href="https://pic.izhaoo.com/20200808135815.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/20200808135815.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>appid</strong></p>
-<p>配置项 <code>daovoice</code> 配置应用。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Daovoice</span><br><span class="hljs-attr">daovoice:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">appId:</span> <span class="hljs-string">abcdefg</span>  <span class="hljs-comment">#你的 app_id</span><br></code></pre></td></tr></table></figure>
 
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> DaoVoice。</li>
-<li><code>appId</code>: 填写之前复制的 <code>app_id</code>。</li>
-</ul>
-<p>点击 <code>Fab</code> 中的 <strong>消息图标</strong> 即可打开。</p>
-<h3 id="意见反馈平台-腾讯兔小巢"><a href="#意见反馈平台-腾讯兔小巢" class="headerlink" title="意见反馈平台 (腾讯兔小巢)"></a>意见反馈平台 (腾讯兔小巢)</h3><p><a href="https://txc.qq.com/">腾讯兔小巢</a> 是一款用户意见反馈平台。</p>
-<p>首先在 <a href="https://txc.qq.com/">腾讯兔小巢</a> 官网上注册一个产品，在 <a href="https://txc.qq.com/dashboard/products/">产品设置</a> 中复制 <code>ID</code>。</p>
-<p>配置项 <code>tencentChao</code> 用于配置兔小巢。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Tencent Chao</span><br><span class="hljs-attr">tencentChao:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">appId:</span> <span class="hljs-comment"># app_id</span><br></code></pre></td></tr></table></figure>
+</aside>
 
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> 兔小巢。</li>
-<li><code>appId</code>: 填写之前复制的 <code>ID</code>。</li>
-</ul>
-<h3 id="页面统计-LeanCloud"><a href="#页面统计-LeanCloud" class="headerlink" title="页面统计 (LeanCloud)"></a>页面统计 (LeanCloud)</h3><p><strong>LeanCloud</strong> 是一款 <code>ServerLess</code> 服务，主题中被用来统计每个页面的访问量，并在页面中展示。</p>
-<p>首先在 <a href="https://leancloud.cn/">LeanCloud</a> 注册一个账号，并创建一个应用（开发版）。</p>
-<p>进入应用管理界面，点击【存储】-&gt;【创建Class】，名称为 <strong>Counter</strong>，访问权限为 <strong>所有用户</strong>，写入权限为 <strong>限制写入</strong>，如下：</p>
-<p><a href="https://pic.izhaoo.com/202011194911.jpg"><img    class="lazyload" data-original="https://pic.izhaoo.com/202011194911.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">img</span></a><strong>创建LeanCloud</strong></p>
-<p>在【设置】-&gt;【应用Keys】中复制 <code>appId</code> 和 <code>appKey</code>。</p>
-<p>配置项 <code>leancloud</code> 用于设置 <code>LeanCloud</code>。</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># LeanCloud</span><br><span class="hljs-symbol">leancloud:</span><br><span class="hljs-symbol">  enable:</span> true<br><span class="hljs-symbol">  appId:</span><br><span class="hljs-symbol">  appKey:</span><br><span class="hljs-symbol">  serverURLs:</span> https:<span class="hljs-comment">//leancloud.cn/</span><br></code></pre></td></tr></table></figure>
+<h2 id="国家“自行消亡”和暴力革命"><a href="#国家“自行消亡”和暴力革命" class="headerlink" title="国家“自行消亡”和暴力革命"></a>国家“自行消亡”和暴力革命</h2><ol>
+<li><p>恩格斯的国家“自行消亡”</p>
+<blockquote>
+<p>“无产阶级将<strong>取得国家政权</strong>，并且首先把生产资料变为国家财产。但是，这样一来它就<strong>消灭了作为无产阶级的自身</strong>，<strong>消灭了一切阶级差别和阶级对立</strong>，也消灭了<strong>作为国家的国家</strong>。到目前为止还在阶级对立中运动着的社会，都需要有国家，即需要一个剥削阶级的组织，以便维持它的外部的生产条件，特别是用暴力把被剥削阶级控制在当时的生产方式所决定的那些压迫条件下（奴隶制、农奴制或依附农制、雇佣劳动制）。国家是整个社会的正式代表，是社会在一个有形的组织中的集中表现，但是，说国家是这样的，这仅仅是说，它是当时独自代表整个社会的那个阶级的国家：在古代是占有奴隶的公民的国家，在中世纪是封建贵族的国家，在我们的时代是资产阶级的国家。<strong>当国家终于真正成为整个社会的代表时，它就使自己成为多余的了</strong>。当不再有需要加以镇压的社会阶级的时候，当阶级统治和根源于至今的生产无政府状态的生存斗争已被消除，而由此产生的冲突和极端行动也随着被消除了的时候，就不再有什么需要镇压了，也就不再需要国家这种实行镇压的特殊力量了。<strong>国家真正作为整个社会的代表所采取的第一个行动，即以社会的名义占有生产资料，同时也是它作为国家所采取的最后一个独立行动</strong>。那时，国家政权对社会关系的干预将先后在各个领域中成为多余的事情而自行停止下来。那时，对人的统治将由对物的管理和对生产过程的领导所代替。国家不是‘被废除’的，<strong>它是自行消亡的</strong>。应当以此来衡量‘自由的人民国家’这个用语，这个用语在鼓动的意义上暂时有存在的理由，但归根到底是没有科学根据的；同时也应当以此来衡量所谓无政府主义者提出的在一天之内废除国家的要求。”</p>
+</blockquote>
+<ol>
+<li><p>无产阶级将取得国家政权，“这样一来也消灭了作为国家的国家”：这里所指的是以无产阶级革命来消灭资产阶级的国家。而国家“自行消亡”指的是社会主义革命后无产阶级国家制度残余</p>
+<p>即：<strong>资产阶级国家是由无产阶级在革命中来“消灭”的。在这个革命以后，自行消亡的是无产阶级的国家或半国家</strong></p>
+</li>
+<li><p>国家是“特殊的镇压力量”：即资产阶级对无产阶级的镇压力量，应该由无产阶级对资产阶级的“特殊镇压力量”即无产阶级专政来代替，<strong>此即为消灭作为国家的国家</strong></p>
+</li>
+<li><p>国家自行消亡：是非常明确的指“国家以整个社会的名义占有生产资料”以后即社会主义革命以后的时期。<strong>此时的国家形态是最完全的民主（民主也是国家），而这种民主和国家本身，将自行消亡</strong></p>
+</li>
+<li><p>“国家自行消亡”是反对机会主义又反对无政府主义的</p>
+</li>
+</ol>
+</li>
+<li><p>暴力革命</p>
+<ol>
+<li><p>暴力在历史上还起着另一种作用：革命的作用</p>
+<blockquote>
+<p>暴力，是每一个孕育着新社会的旧社会的助产婆，它是社会运动借以为自己开辟道路并摧毁僵化的垂死的政治形式的工具</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<aside>
+💡 无产阶级国家代替资产阶级国家，非通过**暴力革命**不可。无产阶级国家的消灭，只能通过“**自行消亡**”
 
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> <code>LeanCloud</code>。</li>
-<li><code>appId</code>: 填入刚才得到的 <code>appId</code>。</li>
-<li><code>appKey</code>: 填入刚才得到的 <code>appKey</code>。</li>
-<li><code>serverURLs</code>: 服务路径不用改，保持 <code>https://leancloud.cn/</code> 就可以了。</li>
-</ul>
-<h3 id="图片懒加载-LazyLoad"><a href="#图片懒加载-LazyLoad" class="headerlink" title="图片懒加载 (LazyLoad)"></a>图片懒加载 (LazyLoad)</h3><p>配置项 <code>lazyload</code> 用于配置图片懒加载。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Lazyload</span><br><span class="hljs-attr">lazyload:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">only_post:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">loading:</span> <span class="hljs-string">/images/theme/loading.gif</span><br></code></pre></td></tr></table></figure>
 
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> 图片懒加载。</li>
-<li><code>onlyPost</code>: 只对对文章中的图片开启懒加载功能。</li>
-<li><code>loading</code>: 加载动画，默认是开启 <code>placeholder（占位图）</code> 的，可以在网上下载喜欢的动图，填写 <code>图片URL</code> 即可。</li>
-</ul>
-<h3 id="图片灯箱-FancyBox"><a href="#图片灯箱-FancyBox" class="headerlink" title="图片灯箱 (FancyBox)"></a>图片灯箱 (FancyBox)</h3><p>配置项 <code>FancyBox</code> 用于设置图片灯箱效果，开启后点击文章中的图片会以幻灯片的形式播放。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">fancybox:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+</aside>
 
-<h3 id="无刷新加载-PJAX"><a href="#无刷新加载-PJAX" class="headerlink" title="无刷新加载 (PJAX)"></a>无刷新加载 (PJAX)</h3><p>配置项 <code>pjax</code> 用于设置无刷新加载，开启后让你的博客嗖嗖嗖~</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">pjax:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+<h1 id="国家与革命（1848——1851年的经验）"><a href="#国家与革命（1848——1851年的经验）" class="headerlink" title="国家与革命（1848——1851年的经验）"></a>国家与革命（1848——1851年的经验）</h1><h2 id="革命的前夜"><a href="#革命的前夜" class="headerlink" title="革命的前夜"></a>革命的前夜</h2><ol>
+<li><p>无产阶级专政</p>
+<blockquote>
+<p>劳动阶级在发展进程中将创造一个消除阶级和阶级对抗的联合体来代替旧的资产阶级社会，从此不在会有原来意义的政权了。因为政权正是资产阶级社会内部阶级对抗的正式表现</p>
+</blockquote>
+<ol>
+<li>工人革命的<strong>第一步</strong>就是使无产阶级转化为统治阶级，争得民主</li>
+</ol>
+<blockquote>
+<p>无产阶级将利用自己的政治统治，一步一步地夺取资产阶级的全部资本，把一切生产工具集中在国家即组织成为统治阶级的无产阶级手里，并且尽可能快地增加生产力的总量</p>
+</blockquote>
+<aside>
+🗣 **国家即组织成为统治阶级的无产阶级**</li>
+</ol>
+   </aside>
 
-<p>tips: 该功能暂时不稳定，会引起一些特效、功能的异常，暂时不建议开启。</p>
-<h3 id="代码高亮-HighLight"><a href="#代码高亮-HighLight" class="headerlink" title="代码高亮 (HighLight)"></a>代码高亮 (HighLight)</h3><p>在 <strong>博客配置</strong> 中开启代码高亮效果：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">highlight:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span>  <span class="hljs-comment">#启用代码高亮效果</span><br>  <span class="hljs-attr">line_number:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">auto_detect:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">hljs:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">tab_replace:</span><br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li><p>无产阶级需要国家</p>
+<ol>
+<li>第一，无产阶级所需要的只是<strong>逐渐消亡的国家</strong>，即组织得能<strong>立刻开始消亡而且不能不消亡</strong>的国家</li>
+<li>第二，劳动者所需要的“国家”，“即组织成为统治阶级的无产阶级“</li>
+<li>劳动者需要国家只是<strong>为了镇压剥削者的反抗</strong>，而能够领导和实行这种镇压的只有无产阶级，因为无产阶级是唯一彻底革命的阶级，是唯一能够团结一切被剥削劳动者对资产阶级进行斗争、把资产阶级完全铲除的阶级</li>
+<li>无产阶级需要国家政权，中央集权的强力组织，暴力组织，既是为了镇压剥削者的反抗，也是为了<strong>领导</strong>广大民众即农民、小资产阶级和半无产者来<strong>“调整”社会主义经济</strong></li>
+<li>小资产阶级民主派，妄图用阶级妥协来代替阶级斗争，其根源就在于认为国家是超阶级的存在，其表现在实践中就会导致出卖劳动阶级的利益</li>
+</ol>
+</li>
+<li><p>无产阶级领导阶级革命</p>
+<blockquote>
+<p>只有无产阶级才能推翻资产阶级的统治，因为无产阶级是一个特殊阶级，它的生存的经济条件为它推翻资产阶级的统治作了准备，使它有可能、有力量达到这个目的。</p>
+</blockquote>
+<blockquote>
+<p>资产阶级在分离和分散农民及一切小资产阶级阶层的同时，却使无产阶级团结、联合和组织起来。</p>
+</blockquote>
+<blockquote>
+<p>只有无产阶级，由于它在大生产中的经济作用，才能成为<strong>一切</strong>被剥削劳动群众的领袖，这些被剥削劳动群众受资产阶级的剥削、压迫和摧残比起无产阶级来往往有过之而无不及，<strong>可是他们不能为自己的解放独立地进行斗争</strong></p>
+</blockquote>
+</li>
+</ol>
+<aside>
+🗣 不预先消灭和破坏资产阶级为自己建立的国家机器，根本就不可能建立这样一个组织！
 
-<p>配置项 <code>highlight</code> 用于设置代码高亮效果。</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># HighLight</span><br><span class="hljs-symbol">highlight:</span><br><span class="hljs-symbol">  enable:</span> true<br><span class="hljs-symbol">  style:</span> <span class="hljs-meta"># https:<span class="hljs-comment">//highlightjs.org/static/demo/</span></span><br><span class="hljs-symbol">    light:</span> Xcode<br><span class="hljs-symbol">    dark:</span> Solarized Dark<br></code></pre></td></tr></table></figure>
 
-<ul>
-<li><code>enable</code>: <em>开启</em> / <em>关闭</em> 代码高亮。</li>
-<li><code>style -&gt; light</code>: <em>浅色模式</em> 时的高亮样式。</li>
-<li><code>style -&gt; dark</code>: <em>深色模式</em> 时的高亮样式。</li>
-</ul>
-<p>可以到 <a href="https://highlightjs.org/static/demo/">官网</a> 预览高亮效果，填写样式名称即可。</p>
-<h3 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h3><p>配置项 <code>seo</code> 用于设置 SEO（网站关键词优化）功能。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># SEO</span><br><span class="hljs-attr">seo:</span><br>  <span class="hljs-attr">baidu_auto_push:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+</aside>
 
-<ul>
-<li><code>baidu_auto_push</code>: 开启 <a href="https://ziyuan.baidu.com/linksubmit/index">百度站长平台</a> 链接自动推送功能。</li>
-</ul>
-<h3 id="网页统计"><a href="#网页统计" class="headerlink" title="网页统计"></a>网页统计</h3><p>配置项 <code>analytics</code> 用于设置网站统计。</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># Analytics</span><br><span class="hljs-symbol">analytics:</span><br><span class="hljs-symbol">  baidu:</span> <span class="hljs-meta"># id</span><br><span class="hljs-symbol">  google:</span> <span class="hljs-meta"># id</span><br><span class="hljs-symbol">  tencent:</span> <span class="hljs-meta"># id</span><br><span class="hljs-symbol">  cnzz:</span> <span class="hljs-meta"># id</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>baidu</code>: <a href="https://tongji.baidu.com/web/welcome/login">百度统计</a></li>
-<li><code>google</code>: <a href="https://analytics.google.com/analytics/web">谷歌统计</a></li>
-<li><code>tencent</code>: <a href="https://ta.qq.com/#/">腾讯分析</a></li>
-<li><code>cnzz</code>: <a href="https://www.umeng.com/web">友盟统计</a></li>
-</ul>
-<p>在对应的数据统计官网注册网站应用，复制对应的 <code>id</code> 填写即可。</p>
-<h2 id="脚本配置"><a href="#脚本配置" class="headerlink" title="脚本配置"></a>脚本配置</h2><h3 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h3><p>对于外部静态文件（CSS 或 JS），可以使用第三方 <code>CDN</code> 库进行优化加速。</p>
-<p>配置项 <code>vendors</code> 用于设置静态库引入位置，直接输入 <code>URL</code> 即可。您可以保持默认配置（BootCDN）,留空则从本地引入。</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">vendors:<br>  jquery_js: https:<span class="hljs-regexp">//</span>cdn.bootcss.com<span class="hljs-regexp">/jquery/</span><span class="hljs-number">3.4</span>.<span class="hljs-number">1</span>/jquery.min.js<br>  fancybox_js: https:<span class="hljs-regexp">//</span>cdn.bootcss.com<span class="hljs-regexp">/fancybox/</span><span class="hljs-number">3.5</span>.<span class="hljs-number">7</span>/jquery.fancybox.min.js<br>  pjax_js: https:<span class="hljs-regexp">//</span>cdn.bootcss.com<span class="hljs-regexp">/jquery.pjax/</span><span class="hljs-number">2.0</span>.<span class="hljs-number">1</span>/jquery.pjax.min.js<br>  lazyload_js: https:<span class="hljs-regexp">//</span>cdn.bootcdn.net<span class="hljs-regexp">/ajax/</span>libs<span class="hljs-regexp">/jquery.lazyload/</span><span class="hljs-number">1.9</span>.<span class="hljs-number">1</span>/jquery.lazyload.min.js<br>  fancybox_css: https:<span class="hljs-regexp">//</span>cdn.bootcss.com<span class="hljs-regexp">/fancybox/</span><span class="hljs-number">3.5</span>.<span class="hljs-number">7</span>/jquery.fancybox.min.css<br>  highlight_css: https:<span class="hljs-regexp">//</span>cdn.bootcss.com<span class="hljs-regexp">/highlight.js/</span><span class="hljs-number">9.18</span>.<span class="hljs-number">1</span><span class="hljs-regexp">/styles/</span>xcode.min.css<br>  iconfont_css: <span class="hljs-regexp">//</span>at.alicdn.com<span class="hljs-regexp">/t/</span>font_1445822_58xq2j9v1id.css<br></code></pre></td></tr></table></figure>
-
-<h3 id="脚本埋点"><a href="#脚本埋点" class="headerlink" title="脚本埋点"></a>脚本埋点</h3><p>有时候我们需要埋入一些第三方脚本，例如 <code>百度统计</code>、<code>百度SEO</code> 等，主题在 <strong>头部</strong> 和 <strong>尾部</strong> 分别开放了埋点入口，通过配置项 <code>custom</code> 进行配置。</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># Custom</span><br><span class="hljs-symbol">custom:</span><br><span class="hljs-symbol">  head:</span><br><span class="hljs-symbol">  foot:</span><br><span class="hljs-symbol">  css:</span><br><span class="hljs-symbol">  js:</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>head</code>: 引入头部的代码。</li>
-<li><code>foot</code>: 引入尾部的代码。</li>
-<li><code>css</code>: 外部引入的 <code>CSS</code> 链接。</li>
-<li><code>js</code>: 外部引入的 <code>JS</code> 链接。</li>
-</ul>
+<h2 id="革命的总结"><a href="#革命的总结" class="headerlink" title="革命的总结"></a>革命的总结</h2>]]></content>
+      <categories>
+        <category>哲</category>
+      </categories>
+      <tags>
+        <tag>马哲</tag>
+        <tag>列宁</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>模板文件</title>
+    <url>/2022/01/23/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<p>这是一个模板示例文件，包含所有front-matter设置项</p>
 ]]></content>
       <categories>
         <category>技</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>博客搭建</tag>
         <tag>hexo</tag>
       </tags>
   </entry>
