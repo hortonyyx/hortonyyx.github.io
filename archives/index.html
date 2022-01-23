@@ -6,13 +6,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Archive - Hexo</title>
+  <title>Archive - Hortonyyx</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   
   
-  <meta name="author" content="John Doe">
+  <meta name="author" content="hortonyyx">
   <link rel="icon" href="/images/icons/icon-16.png" type="image/png" sizes="16x16">
   <link rel="icon" href="/images/icons/icon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/images/icons/icon-256x256.png" sizes="180x180">
@@ -73,9 +73,9 @@
         }
       },
       donate: {
-        enable: false,
-        alipay: 'https://pic.izhaoo.com/alipay.jpg',
-        wechat: 'https://pic.izhaoo.com/wechat.jpg'
+        enable: true,
+        alipay: '/images/images/Ali-pay.jpg',
+        wechat: '/images/images/WeChat-pay.jpg'
       },
       galleries: {
         enable: true
@@ -198,14 +198,14 @@
             <h3 class="archive-year">2022 年</h3>
           
           <div class="archive-item">
-            <a class="archive-date" href="/2022/01/21/test/">January 21</a>
-            <a class="archive-title" href="/2022/01/21/test/"></a>
+            <a class="archive-date" href="/2022/01/22/markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">January 22</a>
+            <a class="archive-title" href="/2022/01/22/markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">Markdown的基本使用</a>
           </div>
         
           
           <div class="archive-item">
-            <a class="archive-date" href="/2022/01/21/hello-world/">January 21</a>
-            <a class="archive-title" href="/2022/01/21/hello-world/">Hello World</a>
+            <a class="archive-date" href="/2022/01/22/first-blog/">January 22</a>
+            <a class="archive-title" href="/2022/01/22/first-blog/">Hi,blog world!</a>
           </div>
         
       </div>
@@ -334,7 +334,7 @@
     }
 
     const addCount = (Counter) => {
-      const url = $(".leancloud-counter").length === 1 ? $(".leancloud-counter").attr('id').trim() : 'http://example.com';
+      const url = $(".leancloud-counter").length === 1 ? $(".leancloud-counter").attr('id').trim() : 'https://hortonyyx.github.io';
       var query = new Counter;
       query.save({
         words: url
@@ -353,7 +353,7 @@
     }
 
     const addLike = (Like) => {
-      const url = $(".leancloud-like").length === 1 ? $(".leancloud-like").attr('id').trim() : 'http://example.com';
+      const url = $(".leancloud-like").length === 1 ? $(".leancloud-like").attr('id').trim() : 'https://hortonyyx.github.io';
       var query = new Like;
       query.save({
         path: url,
