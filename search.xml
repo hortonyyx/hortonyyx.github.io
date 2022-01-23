@@ -204,18 +204,4 @@
         <tag>hexo</tag>
       </tags>
   </entry>
-  <entry>
-    <title>Markdown的基本使用</title>
-    <url>/2022/01/22/markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h1><h2 id="Markdown-1"><a href="#Markdown-1" class="headerlink" title="Markdown"></a>Markdown</h2><h3 id="Markdown-2"><a href="#Markdown-2" class="headerlink" title="Markdown"></a>Markdown</h3><p>用#来表示123级标题</p>
-<hr>
-<p>三个-用来分栏</p>
-]]></content>
-      <categories>
-        <category>技</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
 </search>
